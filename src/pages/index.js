@@ -2,5 +2,7 @@ export { default as Home } from './Home';
 export { default as About } from './About';
 export { default as Contact } from './Contact';
 export { default as Pricing } from './Pricing';
-export { default as Features } from './Features';
+export { default as CreatePassword } from './CreatePassword';
+export { default as VerifyPassword } from './VerifyPassword';
+export { default as ForgetPassword } from './ForgetPassword';
 export { default as FAQS } from './FAQS';

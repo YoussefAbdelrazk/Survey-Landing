@@ -1,31 +1,55 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import { Home, About, Contact, Pricing, FAQS, Features } from './pages/index';
+import Layout from './components/Layout';
+import {
+  About,
+  Contact,
+  CreatePassword,
+  FAQS,
+  ForgetPassword,
+  Home,
+  Pricing,
+  VerifyPassword,
+} from './pages/index';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
-  },
-  {
-    path: '/about',
-    element: <About />,
-  },
-  {
-    path: '/contact',
-    element: <Contact />,
-  },
-  {
-    path: '/pricing',
-    element: <Pricing />,
-  },
-  {
-    path: '/faqs',
-    element: <FAQS />,
-  },
-  {
-    path: '/features',
-    element: <Features />,
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: '/about',
+        element: <About />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
+      {
+        path: '/pricing',
+        element: <Pricing />,
+      },
+      {
+        path: '/faqs',
+        element: <FAQS />,
+      },
+      {
+        path: '/create-password',
+        element: <CreatePassword />,
+      },
+      {
+        path: '/verify-password',
+        element: <VerifyPassword />,
+      },
+      {
+        path: '/forget-password',
+        element: <ForgetPassword />,
+      },
+    ],
   },
 ]);
 function App() {
