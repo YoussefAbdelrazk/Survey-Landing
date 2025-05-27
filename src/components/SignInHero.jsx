@@ -4,10 +4,10 @@ import { Link } from "react-router";
 
 function SignInHero() {
   return (
-  <section className="flex flex-col justify-center items-center bg-[rgba(0,183,193,1)] h-screen sm:w-[90%] md:w-[480px] lg:w-[555px]">
+  <section className=" hidden md:flex flex-col justify-center items-center bg-[rgba(0,183,193,1)] h-screen  md:w-[40%] lg:w-[555px] ">
   <div className="flex flex-col justify-center items-center gap-16  w-[340px] ">
     <div className="flex flex-col justify-center items-center gap-6 font-semibold">
-      <h2 className="text-white text-xl md:text-3xl lg:text-5xl text-center ">
+      <h2 className="text-white text-2xl md:text-4xl lg:text-5xl text-center ">
         New to<br/> SurveyLand? <br/>Sign up here!
       </h2>
       <p className="text-white text-md leading-loose ">Become part of our community</p>
