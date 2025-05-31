@@ -11,6 +11,7 @@ import {
   Pricing,
   VerifyPassword,
   SignIn,
+  Profile,
 } from './pages/index';
 
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: '/sign-in',
         element: <SignIn/>
+      },
+      {
+        path: '/profile',
+        element:  <Profile/>
       },
       {
         path: '/create-password',
