@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import ProfileForm from "../components/ProfileForm";
 function Profile() {
   return (
-    <section className="flex flex-1 flex-col  gap-8 h-screen w-full lg:w-[960px] px-4 md:px-8 lg:px-16 py-3 md:py-6 lg:py-12">
+    <section className="flex flex-1 flex-col gap-6  lg:gap-8 h-screen w-full lg:w-[960px] px-4 md:px-8 lg:px-16 py-3 md:py-6 lg:py-12">
       <Heading />
-      <div>
+      <div className="flex flex-col gap-8 lg:gap-10">
         <Image />
+        <ProfileForm/>
       </div>
     </section>
   );
@@ -25,6 +27,7 @@ const Heading = () => {
     </div>
   );
 };
+
 
 
 const Image = () => {
@@ -71,9 +74,8 @@ const Image = () => {
           onChange={handleImageChange}
           className="hidden"
         />
-
         <button
-          className="bg-[rgba(185,187,198,1)] text-[rgba(30,31,36,1)] px-4 py-2 rounded-lg w-[140px] h-[40px] text-xs"
+          className="bg-[rgba(185,187,198,1)] text-[rgba(30,31,36,1)] px-4 py-2 rounded-lg w-[140px] h-[40px] text-xs cursor-pointer"
           onClick={() => setSelectedImage("/profile.png")}
         >
           Remove Photo
