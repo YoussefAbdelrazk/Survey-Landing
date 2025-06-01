@@ -5,4 +5,9 @@ export { default as Pricing } from './Pricing';
 export { default as CreatePassword } from './CreatePassword';
 export { default as VerifyPassword } from './VerifyPassword';
 export { default as ForgetPassword } from './ForgetPassword';
+
 export { default as FAQS } from './Faqs';
+
+
+export { default as SignIn } from './SignIn';
+
