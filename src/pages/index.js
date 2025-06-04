@@ -10,4 +10,3 @@ export { default as FAQS } from './Faqs';
 
 
 export { default as SignIn } from './SignIn';
-
