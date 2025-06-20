@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Home from '../pages/Home';
 import { About } from '@/pages';
 import TemplateGrid from '@/pages/TemplateGrid';
+import { Home} from '../pages';
 
 export default function Layout() {
   return (
