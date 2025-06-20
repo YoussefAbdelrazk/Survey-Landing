@@ -10,6 +10,8 @@ import {
   Home,
   Pricing,
   VerifyPassword,
+  SignIn,
+  Profile,
 } from './pages/index';
 
 const router = createBrowserRouter([
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: '/faqs',
         element: <FAQS />,
+      },
+      {
+        path: '/sign-in',
+        element: <SignIn/>
+      },
+      {
+        path: '/profile',
+        element:  <Profile/>
       },
       {
         path: '/create-password',
