@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import ProfileForm from "../components/ProfileForm";
+
 export default function Profile() {
   return (
     <section className="flex flex-1 flex-col gap-6  lg:gap-8 h-screen w-full lg:w-[960px] px-4 md:px-8 lg:px-16 py-3 md:py-6 lg:py-12">
