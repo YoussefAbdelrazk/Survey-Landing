@@ -1,3 +1,6 @@
+import SignUp from "@/pages/SignUp";
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <div>
@@ -32,9 +35,11 @@ export default function Navbar() {
             <button className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors">
               Login
             </button>
+            <Link to={SignUp}>
             <button className="px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-medium rounded-md transition-colors">
               Sign Up
             </button>
+            </Link>
           </div>
         </div>
       </div>

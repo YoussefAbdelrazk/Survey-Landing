@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button } from '../components/ui/button';
+import { About, Contact, Pricing , FAQS} from '.';
+import TemplateGrid from './TemplateGrid';
 
 const Home = () => {
   return (
@@ -36,6 +38,11 @@ const Home = () => {
             />
           </div>
         </div>
+        <About/>
+        <TemplateGrid/>
+        <Contact/>
+        <FAQS/>
+      <Pricing/>
       </div>
     </div>
   );
