@@ -7,13 +7,15 @@ import AboutWorks from "../components/about-us/AboutWorks";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full bg-white ">
+    <div className="flex flex-col  ">
       <AboutHero />
-      <AboutTrending />
-      <AboutMission />
-      <AboutTeam />
-      <AboutWorks />
-      <AboutLeader />
+      <div className="bg-gray-50 flex flex-col items-center justify-center w-full px-4 md:px-16 py-12 gap-8">
+        <AboutTrending />
+        <AboutMission />
+        <AboutTeam />
+        <AboutWorks />
+        <AboutLeader />
+      </div>
     </div>
   );
 };
