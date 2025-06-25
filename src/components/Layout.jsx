@@ -11,7 +11,10 @@ export default function Layout() {
   return (
     <div>
       <Navbar />
+      <br/>
       <Outlet/>
+      <br/>
+      <hr/>
       <Footer />
     </div>
   );
