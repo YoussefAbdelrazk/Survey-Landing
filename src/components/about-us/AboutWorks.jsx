@@ -35,10 +35,10 @@ function AboutWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             How It <span style={{ color: "#35bbc3" }}>Works</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-sm md:text-base lg:text-xl  max-w-3xl mx-auto  md:max-w-[70%] ">
             Get started with our simple three-step process and transform your
             data collection experience
           </p>
