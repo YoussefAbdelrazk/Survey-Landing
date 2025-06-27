@@ -49,7 +49,7 @@ function AboutWorks() {
           {steps.map((step, index) => (
             <Card
               key={index}
-              className="w-full shadow-md rounded-lg hover:shadow-lg transition-shadow duration-300"
+              className="w-full shadow-md rounded-lg hover:shadow-lg transition-shadow duration-300 h-full"
             >
               <CardBody className="p-6">
                 <step.icon
