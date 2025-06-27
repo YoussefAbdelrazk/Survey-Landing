@@ -1,21 +1,28 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import Dashboard from "../components/Dashboard";
 import ProfileForm from "../components/ProfileForm";
 
 export default function Profile() {
   return (
-    <section className="flex flex-1 flex-col gap-6  lg:gap-8 h-screen w-full lg:w-[960px] px-4 md:px-8 lg:px-16 py-3 md:py-6 lg:py-12">
-      <Heading />
-      <div className="flex flex-col gap-8 lg:gap-10">
-        <Image />
-        <ProfileForm/>
+    <div className="flex gap-4 md:gap-6 lg:gap-10  w-full bg-gray-50 p-8 mb-15">
+      <div className=" px-8 lg:px-10 shadow-md bg-white">
+        <Dashboard />
       </div>
-    </section>
+
+      <section className="flex flex-1 flex-col gap-6  lg:gap-8  w-full lg:w-[960px] px-4 md:px-8 lg:px-16 py-3 md:py-6 lg:py-12 shadow-md bg-white ">
+        <Heading />
+        <div className="flex flex-col gap-40 md:gap-10">
+          <Image />
+          <ProfileForm />
+        </div>
+      </section>
+    </div>
   );
 }
 
 const Heading = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 w-full lg:w-[624px]">
+    <div className="flex flex-col items-center justify-center gap-3 w-full lg:w-[624px] ">
       <h1 className="text-2xl  md:text-3xl lg:text-4xl font-bold text-[rgba(30,31,36,1)]">
         Account Information
       </h1>
@@ -26,8 +33,6 @@ const Heading = () => {
     </div>
   );
 };
-
-
 
 const Image = () => {
   const [selectedImage, setSelectedImage] = useState("/profile.png");
@@ -52,11 +57,12 @@ const Image = () => {
   }, [objectUrl]);
 
   return (
-    <div className="flex items-center gap-10 w-[438px] h-[102px]">
+    <div className="flex flex-col md:flex-row items-center gap-10 w-full md:w-[438px] md:h-[102px]  p-5  ">
       <img
-        src={selectedImage}
+        src={selectedImage || "/profile-icon.png"}
         alt="Profile"
-        className="w-[102.64px] h-[102.64px] rounded-full object-cover mb-4"
+        onError={(e) => (e.target.src = "/profile-icon.png")}
+        className="w-[102.64px] h-[102.64px] rounded-full object-cover"
       />
 
       <div className="flex gap-4">
@@ -83,5 +89,3 @@ const Image = () => {
     </div>
   );
 };
-
-
