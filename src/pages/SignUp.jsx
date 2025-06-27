@@ -29,7 +29,7 @@ const SignUp = () => {
   return (
     <div className="min-h-screen flex">
       {/* Left Side - Welcome Section */}
-      <div className="flex-1 bg-gradient-to-br from-cyan-400 to-teal-500 flex items-center justify-center p-8">
+      <div className="hidden md:flex flex-1 bg-gradient-to-br from-cyan-400 to-teal-500 items-center justify-center p-8">
         <div className="text-center text-white max-w-md">
           <h1 className="text-4xl font-bold mb-6">
             Already have<br />
