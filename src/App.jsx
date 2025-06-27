@@ -14,6 +14,7 @@ import {
   SignIn,
   Profile,
 } from './pages/index';
+import SignUp from './pages/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: '/sign-in',
         element: <SignIn/>
+      },
+      {
+        path: '/sign-up',
+        element: <SignUp/>
       },
       {
         path: '/profile',
