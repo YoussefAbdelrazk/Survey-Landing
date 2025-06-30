@@ -9,12 +9,12 @@ export default function Layout() {
   const shouldHideFooter = hideFooterRoutes.includes(location.pathname);
 
   return (
-    <div>
+    <div className="min-h-screen flex flex-col bg-white dark:bg-black white dark:black"> 
       <Navbar />
       <br />
       <Outlet />
-      <br />
-      <hr />
+      {/* <br /> */}
+      {/* <hr /> */}
       {/* Conditionally render the Footer */}
       {!shouldHideFooter && <Footer />}
     </div>
