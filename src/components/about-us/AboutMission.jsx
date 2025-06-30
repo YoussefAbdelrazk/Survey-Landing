@@ -22,7 +22,7 @@ function AboutMission() {
 
       {/* Right side text */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-6">
-        <h2 className="text-2xl md:text-3xl  text-gray-800  font-medium">
+        <h2 className="text-2xl md:text-3xl   text-secondary font-medium">
           Our <span className="text-[#00B7C1]">mission</span>
         </h2>
         <p className="text-gray-600 text-base md:text-lg leading-relaxed lg:max-w-[70%]">
