@@ -22,16 +22,16 @@ function AboutTrending() {
       className="w-full max-w-4xl  px-4 py-8"
     >
       <h2 className="text-lg md:text-xl lg:text-2xl font-bold mb-6 text-start ">
-        Trending <span className="text-[#00B7C1]">Action</span>
+        Trending <span className="text-primary-btn dark:text-primary-btn">Action</span>
       </h2>
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-8">
         {TrendingData.map((item) => (
-          <div key={item.id} className="flex flex-col gap-3 bg-white rounded-lg px-6 py-4 shadow-sm w-full md:w-[30%]">
-            <span className="text-xl md:text-2xl font-semibold text-[#00B7C1] ">
+          <div key={item.id} className="flex flex-col gap-3 bg-white dark:bg-black rounded-lg px-6 py-4 shadow-sm w-full md:w-[30%]">
+            <span className="text-xl md:text-2xl font-semibold text-primary-btn dark:text-primary-btn">
               {item.action}
             </span>
-            <span className="text-gray-600 text-base md:text-lg font-medium">
+            <span className="text-disabled-btn dark:text-disabled-btn text-base md:text-lg font-medium">
               {item.description}
             </span>
           </div>

@@ -47,9 +47,8 @@
   --color-secondary-text: var(--secondary-text);
   --color-disabled-text: var(--disabled-text);
   --color-disabled-back: var(--disabled-back);
-  /* --color-primary-btn-hover: var(--primary-btn);
-  --color-secondary-btn-hover: var(--secondary-btn); */
-
+  --color-primary-btn-hover: var(--primary-btn-hover);
+  --color-outline-btn-hover: var(--outline-btn-hover);
 }
 
 :root {
@@ -93,6 +92,8 @@
    --secondary-text: #62636C;
    --disabled-text: #80828D;
    --disabled-back: #EFF0F3;
+  --primary-btn-hover: #00D1DC;
+  --outline-btn-hover: #e0fafa;
 
    
 }
@@ -138,6 +139,9 @@
    --secondary-text: #B2B3BD;
    --disabled-text: #A2A4B0; 
    --disabled-back: #222325;
+  --primary-btn-hover: #00B7C1;
+  --outline-btn-hover: #153f41;
+
 
    
 }

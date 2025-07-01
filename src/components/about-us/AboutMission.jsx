@@ -22,19 +22,19 @@ function AboutMission() {
 
       {/* Right side text */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-6">
-        <h2 className="text-2xl md:text-3xl   text-secondary font-medium">
-          Our <span className="text-[#00B7C1]">mission</span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black dark:text-white text-center md:text-left">
+          Our <span className="text-primary-btn dark:text-primary-btn">mission</span>
         </h2>
-        <p className="text-gray-600 text-base md:text-lg leading-relaxed lg:max-w-[70%]">
+        <p className="text-primary-text dark:text--text text-base md:text-lg leading-relaxed lg:max-w-[70%]">
           At Typeform, we give forms a better look and feel—so our customers can
           get more out of them. Historically, forms haven't been great, but
           businesses need them and people can’t avoid them.
         </p>
         <Link
           to="/mood"
-          className="flex justify-center items-center font-bold bg-[#00B7C1]  text-white transition-all py-3 px-5 h-[60px] w-[230px] rounded-lg"
+          className="flex justify-center items-center font-bold bg-primary-btn  text-white transition-all py-3 px-5 h-[60px] w-[230px] rounded-lg"
         >
-          End our Mood
+          End Our Mood
         </Link>
       </div>
     </section>

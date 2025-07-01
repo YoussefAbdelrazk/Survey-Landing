@@ -36,14 +36,14 @@ function AboutTeam() {
   return (
     <section className="px-6 py-12">
       {/* Section Heading */}
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 text-center mb-6">
-        Our leadership <span className="text-[#00B7C1]">team</span>
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold  text-center mb-6">
+        Our leadership <span className="text-primary-btn dark:text-primarty-btn">team</span>
       </h2>
 
       {/* Subheading + CTA */}
       <div className="flex justify-between items-center mb-8">
         <h4 className="text-xl md:text-2xl font-bold text-gray-800">
-          Leader<span className="text-[#00B7C1]">ship</span>
+          Leader<span className="text-primary-text d">ship</span>
         </h4>
 
         <Link
@@ -59,20 +59,20 @@ function AboutTeam() {
         {teamData.map((member) => (
           <div
             key={member.id}
-            className=" bg-white shadow-md rounded-xl p-6 flex flex-col gap-3 items-center text-center"
+            className="shadow-md rounded-xl p-6 flex flex-col gap-3 items-center text-center bg-white dark:bg-black"
           >
             <img
               src={member.image}
               alt={member.title}
               className="w-32 h-32 rounded-full  object-cover"
             />
-            <h3 className="text-xl font-semibold text-[#00B7C1]">
+            <h3 className="text-xl font-semibold text-primary-btn dark:text-primary-btn">
               {member.title}
             </h3>
-            <p className="text-gray-600">{member.position}</p>
+            <p className="">{member.position}</p>
             <Link
               to="/"
-              className="w-[200px] h-[40px] bg-[#00B7C1] text-white flex items-center justify-center rounded-lg  hover:bg-[#00a3b0] font-bold"
+              className="w-[200px] h-[40px] bg-primary-btn text-white flex items-center justify-center rounded-lg  hover:bg-primary-btn-hover font-bold"
             >
               join team
             </Link>

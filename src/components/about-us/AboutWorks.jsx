@@ -31,14 +31,14 @@ const steps = [
 
 function AboutWorks() {
   return (
-    <section className="py-24 bg-gray-100 dark:bg-gray-800 transition-colors duration-200">
+    <section className="py-24 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            How It <span style={{ color: "#35bbc3" }}>Works</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-text dark:text-primary-text mb-6">
+            How It <span className="text-primary-btn dark:text-primary-btn">Works</span>
           </h2>
-          <p className="text-sm md:text-base lg:text-xl  max-w-3xl mx-auto  md:max-w-[70%] ">
+          <p className="text-sm md:text-base lg:text-xl  max-w-3xl mx-auto  md:max-w-[70%] text-secondary-text dark:text-secondary-text">
             Get started with our simple three-step process and transform your
             data collection experience
           </p>
@@ -49,20 +49,19 @@ function AboutWorks() {
           {steps.map((step, index) => (
             <Card
               key={index}
-              className="w-full shadow-md rounded-lg hover:shadow-lg transition-shadow duration-300 h-full"
+              className="w-full shadow-lg rounded-lg hover:shadow-lg transition-shadow duration-300 h-full bg-white dark:bg-black"
             >
               <CardBody className="p-6">
                 <step.icon
-                  className="mb-4 h-12 w-12"
-                  style={{ color: "#35bbc3" }}
+                  className="mb-4 h-12 w-12 text-primary-btn dark:text-primary-btn"
                 />
                 <Typography
                   variant="h6"
-                  className="mb-2 text-gray-900 dark:text-white"
+                  className="mb-2 text-primary-text dark:text-primary-text font-semibold"
                 >
                   {step.title}
                 </Typography>
-                <Typography className="text-gray-600 dark:text-gray-400">
+                <Typography className="text-secondary-text dark:text-secondary-text">
                   {step.description}
                 </Typography>
               </CardBody>
