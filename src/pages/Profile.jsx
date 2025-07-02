@@ -4,12 +4,12 @@ import ProfileForm from "../components/ProfileForm";
 
 export default function Profile() {
   return (
-    <div className="flex gap-4 md:gap-6 lg:gap-10  w-full bg-gray-50 p-8 mb-15">
-      <div className=" px-8 lg:px-10 shadow-md bg-white">
-        <Dashboard />
-      </div>
+    <div className="flex  bg-gray-50 border-b" >
+      {/* Sidebar */}
+      <Dashboard />
 
-      <section className="flex flex-1 flex-col gap-6  lg:gap-8  w-full lg:w-[960px] px-4 md:px-8 lg:px-16 py-3 md:py-6 lg:py-12 shadow-md bg-white ">
+      {/* Main Content */}
+      <section className="flex flex-1 flex-col gap-6 w-full lg:w-[960px] px-4 md:px-8 lg:px-16 py-3 md:py-6 lg:py-12 shadow-md bg-white">
         <Heading />
         <div className="flex flex-col gap-40 md:gap-10">
           <Image />
