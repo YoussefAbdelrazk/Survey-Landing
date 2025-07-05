@@ -17,11 +17,13 @@ const ProfileForm = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* User Name */}
         <div>
-          <label className="block text-sm font-medium">User Name</label>
+          <label className="block text-sm text-secondary-text dark:text-secondary-text font-medium">
+            User Name
+          </label>
           <input
             type="text"
             {...register("username", { required: "User Name is required" })}
-            className="w-full border border-gray-300 rounded px-3 py-2 bg-[rgba(239,240,243,1)] outline-none "
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-disabled-back dark:disabled-back outline-none "
           />
           {errors.username && (
             <p className="text-red-500 text-xs mt-1">
@@ -32,11 +34,13 @@ const ProfileForm = () => {
 
         {/* Phone Number */}
         <div>
-          <label className="block text-sm font-medium">Phone Number</label>
+          <label className="block text-sm text-secondary-text dark:text-secondary-text font-medium">
+            Phone Number
+          </label>
           <input
             type="tel"
             {...register("phone", { required: "Phone Number is required" })}
-            className="w-full border border-gray-300 rounded px-3 py-2 bg-[rgba(239,240,243,1)] outline-none"
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-disabled-back dark:disabled-back outline-none"
           />
           {errors.phone && (
             <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>
@@ -45,11 +49,16 @@ const ProfileForm = () => {
 
         {/* Email */}
         <div>
-          <label className="block text-sm font-medium">Email</label>
+          <label
+            className="block text-sm text-secondary-text dark:text-secondary-text 
+          font-medium"
+          >
+            Email
+          </label>
           <input
             type="email"
             {...register("email", { required: "Email is required" })}
-            className="w-full border border-gray-300 rounded px-3 py-2 bg-[rgba(239,240,243,1)] outline-none"
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-disabled-back dark:disabled-back outline-none"
           />
           {errors.email && (
             <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>
@@ -58,10 +67,12 @@ const ProfileForm = () => {
 
         {/* Country */}
         <div>
-          <label className="block text-sm font-medium">Country</label>
+          <label className="block text-sm text-secondary-text dark:text-secondary-text font-medium">
+            Country
+          </label>
           <select
             {...register("country", { required: "Country is required" })}
-            className="w-full border border-gray-300 rounded px-3 py-2 bg-[rgba(239,240,243,1)] outline-none"
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-disabled-back dark:disabled-back outline-none "
           >
             <option value="egypt">Egypt</option>
             <option value="saudi-arabia">Saudi Arabia</option>
@@ -78,11 +89,13 @@ const ProfileForm = () => {
 
         {/* Password */}
         <div>
-          <label className="block text-sm font-medium">Password</label>
+          <label className="block text-sm font-medium text-secondary-text dark:text-secondary-text ">
+            Password
+          </label>
           <input
             type="password"
             {...register("password", { required: "Password is required" })}
-            className="w-full border border-gray-300 rounded px-3 py-2 bg-[rgba(239,240,243,1)] outline-none"
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-disabled-back dark:disabled-back outline-none"
           />
           {errors.password && (
             <p className="text-red-500 text-xs mt-1">
@@ -93,10 +106,12 @@ const ProfileForm = () => {
 
         {/* Language */}
         <div>
-          <label className="block text-sm font-medium">Language</label>
+          <label className="block text-sm text-secondary-text dark:text-secondary-text font-medium">
+            Language
+          </label>
           <select
             {...register("language", { required: "Language is required" })}
-            className="w-full border border-gray-300 rounded px-3  py-2 bg-[rgba(239,240,243,1)] outline-none"
+            className="w-full border border-gray-300 rounded px-3  py-2 bg-disabled-back dark:disabled-back outline-none"
           >
             <option value="arabic">Arabic</option>
             <option value="english">English</option>
@@ -108,7 +123,6 @@ const ProfileForm = () => {
             </p>
           )}
         </div>
-        
       </div>
 
       {/* Submit Button */}

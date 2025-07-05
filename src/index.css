@@ -49,6 +49,7 @@
   --color-disabled-back: var(--disabled-back);
   --color-primary-btn-hover: var(--primary-btn-hover);
   --color-outline-btn-hover: var(--outline-btn-hover);
+  --color-disabled-btn: var(--disabled-btn);
 }
 
 :root {
@@ -94,6 +95,8 @@
    --disabled-back: #EFF0F3;
   --primary-btn-hover: #00D1DC;
   --outline-btn-hover: #e0fafa;
+  --disabled-btn: #B9BBC6
+  
 
    
 }
@@ -141,6 +144,7 @@
    --disabled-back: #222325;
   --primary-btn-hover: #00B7C1;
   --outline-btn-hover: #153f41;
+  --disabled-btn: #6E707A;
 
 
    
