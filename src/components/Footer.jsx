@@ -1,15 +1,15 @@
 export const Footer = () => {
   return (
-    <footer className="bg-white  px-10 py-10 text-[#62636C] text-sm">
+    <footer className="bg-white dark:bg-black  px-10 py-10 text-sm">
       <div className="max-w-6xl mx-auto">
         {/* Logo & Description */}
         <div className="flex flex-col md:flex-row gap-7 text-center md:text-start justify-center  md:justify-between items-center mb-10">
           <div>
             <h2 className="text-xl font-semibold">
-              <span className="text-[#00B7C1]">Survey</span>
-              <span className="text-black">Land</span>
+              <span className="text-primary-btn dark:text-primary-btn">Survey</span>
+              <span className="text-primary-text black:text-primary-text">Land</span>
             </h2>
-            <p className="mt-2 text-sm">
+            <p className="mt-2 text-sm text-secondary-btn dark:text-secondary-btn">
               Make smarter decisions with better data.
               <br />
               Create surveys, gather feedback, and grow.
@@ -21,20 +21,20 @@ export const Footer = () => {
             <input
               type="email"
               placeholder="Stay informed by entering your email"
-              className=" rounded-l-lg px-4 py-2 w-72 text-sm bg-gray-200 placeholder-gray-500"
+              className=" rounded-l-lg px-4 py-2 w-72 text-sm bg-disabled-back dark:bg-disabled-back placeholder-disabled-text dark:placeholder-disabled-text outline-none"
             />
-            <button className="bg-[#00B7C1] text-white px-4 py-2 rounded-r-lg text-sm font-bold">
+            <button className="bg-primary-btn dark:bg-primary-btn text-white px-4 py-2 rounded-r-lg text-sm font-bold">
               Enter
             </button>
           </div>
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-300 my-6"></div>
+        <div className="border-t border-secndary-text my-6"></div>
 
         {/* Footer links centered */}
         <div className="flex justify-center px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-10 lg:gap-x-[142px] text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-10 lg:gap-x-[142px] text-center text-primary-text dark:text-primary-text">
             {/* Section 1 */}
             <div>
               <h3 className="font-bold pb-2">Home</h3>
@@ -74,7 +74,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom line */}
-        <div className="border-t border-gray-300 pt-6 text-center mt-10">
+        <div className="border-t border-secndary-text pt-6 text-center mt-10">
           ©2025 SurveyLand. All rights reserved
         </div>
       </div>
