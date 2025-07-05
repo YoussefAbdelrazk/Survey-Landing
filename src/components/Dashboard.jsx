@@ -95,12 +95,12 @@ export default function Dashboard() {
               }}
               className={`
                 flex h-10 py-3 px-4 gap-3 items-center cursor-pointer rounded-md 
-                transition-colors text-primary-text dark:text-primary-text
                 ${
                   active === item.href
                     ? "bg-secondary-btn dark:bg-primary-btn text-primary-btn dark:text-primary-btn"
-                    : "hover:bg-gray-100 dark:hover:bg-gray-800"
+                    : " text-primary-text dark:text-primary-text hover:bg-gray-100 dark:hover:bg-gray-800"
                 }
+                transition-colors 
               `}
             >
               {item.icon}
