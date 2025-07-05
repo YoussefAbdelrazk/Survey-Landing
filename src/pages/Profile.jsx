@@ -4,12 +4,14 @@ import ProfileForm from "../components/ProfileForm";
 
 export default function Profile() {
   return (
-    <div className="flex bg-gray-50 border-b" >
+    <div className="flex gap-5 p-5 min-h-screen bg-gray-50 dark:bg-gray-800">
       {/* Sidebar */}
-      <Dashboard />
+      <div className="">
+        <Dashboard />
+      </div>
 
       {/* Main Content */}
-      <section className="flex flex-1 flex-col gap-6 w-full lg:w-[960px] px-4 md:px-8 lg:px-16 py-3 md:py-6 lg:py-12 shadow-md bg-white dark:bg-black">
+      <section className="flex flex-1 flex-col gap-6 px-4 md:px-8 lg:px-16 py-3 md:py-6 lg:py-12 shadow-md bg-white dark:bg-black">
         <Heading />
         <div className="flex flex-col gap-40 md:gap-10">
           <Image />
@@ -23,7 +25,7 @@ export default function Profile() {
 const Heading = () => {
   return (
     <div className="flex flex-col  justify-center items-cetner gap-3 w-full lg:w-[624px] ">
-      <h1 className="text-2xl  md:text-3xl lg:text-4xl font-bold text-primary-text dark:text-primary-text ">
+      <h1 className="text-2xl  md:text-3xl lg:text-4xl font-bold text-primary-text dark:text-primary- text text-center">
         Account Information
       </h1>
       <p className="text-primary-text text-center md:text-lg lg:text-xl">

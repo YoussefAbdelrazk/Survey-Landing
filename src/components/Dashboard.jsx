@@ -57,7 +57,7 @@ export default function Dashboard() {
     <div className="relative flex">
       {/* Toggle Button (Visible only on small screens) */}
       <button
-        className="absolute top-1 left-4 -translate-x-1/2  translate-y-1/2 z-50  p-2 text-primary-text rounded-full shadow lg:hidden cursor-pointer transition-colors duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-800"
+        className="absolute top-1 left-2  -translate-x-1/2  translate-y-1/2 z-50  p-2 text-primary-text rounded-full shadow lg:hidden cursor-pointer transition-colors duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-800"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
@@ -70,11 +70,13 @@ export default function Dashboard() {
       {/* Sidebar */}
       <aside
         className={`
-          absolute top-0 left-0 h-full w-64 bg-white dark:bg-black shadow-lg p-4 z-40
-          transition-transform duration-300 ease-in-out
-          ${isOpen ? "translate-x-0" : "-translate-x-full"}
-          lg:translate-x-0
-        `}
+    bg-white dark:bg-black shadow-lg p-4 w-64
+    transition-transform duration-300 ease-in-out
+    h-screen
+    ${isOpen ? "translate-x-0" : "-translate-x-full"} 
+    absolute z-40 top-0 left-0
+    lg:static lg:translate-x-0 lg:z-auto lg:block
+  `}
       >
         <nav className="flex flex-col gap-6">
           <div className="flex h-10 py-3 px-4 gap-3 items-center">

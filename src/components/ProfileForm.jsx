@@ -9,11 +9,10 @@ const ProfileForm = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    // Handle form submission logic here
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 w-full">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 w-full ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* User Name */}
         <div>
